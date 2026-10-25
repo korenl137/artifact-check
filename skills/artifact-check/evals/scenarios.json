@@ -1,0 +1,73 @@
+[
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "방금 만든 발표자료가 내 요청과 지침에 맞는지 점검해줘.",
+    "files": [],
+    "expected_behavior": [
+      "Identifies the recent slide deck and original requirements without asking for already available context.",
+      "Inspects rendered slides using available format tools, fixes supported content and layout issues without a separate fix request, and rechecks changed slides.",
+      "Reports corrections and verification limits; does not publish or send the deck."
+    ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "이 이미지 점검해줘. 요청은 제목을 한글로 넣고 배경을 투명하게 하는 거였어.",
+    "files": [],
+    "expected_behavior": [
+      "Inspects the actual image and compares visible text and transparency with the request.",
+      "Uses available image editing capabilities to correct issues within authorization; does not silently incur a separately chargeable generation cost.",
+      "Reports blocked corrections rather than claiming success from the prompt or filename."
+    ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "방금 만든 결과물 점검해줘.",
+    "files": [],
+    "expected_behavior": [
+      "Uses the clear recent user-facing artifact regardless of file type, including an unfamiliar format when readable.",
+      "Asks a narrow target question only if multiple plausible artifacts remain ambiguous.",
+      "Does not inspect every repository file or reopen unrelated tasks."
+    ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "이 코드 함수의 동시성 버그를 리뷰해줘.",
+    "files": [],
+    "expected_behavior": [
+      "Recognizes code-correctness review rather than user-facing artifact refinement.",
+      "Uses an appropriate code review workflow rather than forcing artifact-check."
+    ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "웹페이지 결과물 점검하고 고쳐줘.",
+    "files": [],
+    "expected_behavior": [
+      "Checks requested visible content, layout and user interactions; may edit implementation code to fix observed artifact problems.",
+      "Preserves the approved design direction rather than redesigning to personal taste.",
+      "Uses the current agent by default, performs focused rechecks, and does not launch independent reviewers or endless polishing loops."
+    ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "이 문서 점검해줘. 파일은 열리지 않지만 이전 답변에는 완성했다고 적혀 있어.",
+    "files": [],
+    "expected_behavior": [
+      "Attempts appropriate artifact inspection and distinguishes the earlier claim from current evidence.",
+      "Reports the specific inspection blocker and any limited check actually performed.",
+      "Does not claim visual verification or rewrite unseen content speculatively."
+    ]
+  }
+]
