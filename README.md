@@ -18,6 +18,7 @@ It asks only when the target or an outcome-changing decision remains ambiguous.
 
 The review focuses on requested content, presentation and intended use.
 It preserves the approved direction, corrects problems, and rechecks the affected result.
+When a correction changes what you see, it keeps the earlier state and gives you a before-and-after comparison of the changed regions.
 It does not turn into an unsolicited redesign or an endless polishing loop.
 Code correctness and architecture review alone belong to existing code review workflows; implementation edits needed to fix a webpage remain in scope.
 

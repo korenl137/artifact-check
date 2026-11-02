@@ -7,7 +7,7 @@ description: >-
   artifact refinement requests. Formats are open; code correctness review alone
   belongs to the existing code review workflow.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Artifact Check
@@ -44,6 +44,7 @@ Do not invent requirements or reopen settled design choices.
 
 Use the current agent for the review by default.
 Inspect the target against the checklist and fix supported problems within the requested artifact scope.
+Before the first visible correction, keep the pre-correction state: a copy of the file or a render of the affected regions.
 Use the appropriate editing tool rather than giving the user instructions to make the correction themselves.
 An independent reviewer is optional when the user requests one; invocation alone does not request extra agents.
 
@@ -57,9 +58,18 @@ destructive replacement, or separately cost-incurring operations outside existin
 Ask only when such an operation is needed or an unresolved choice would change the intended direction.
 Continue independent permitted corrections while a separate decision is pending.
 
+## Compare before and after
+
+When a correction changed what the user sees, make a before-and-after comparison from the kept state and the rechecked output.
+Show each changed region before and after at the same scale and render settings, with one line per change naming the defect and the correction.
+Deliver it in a form the user can open, such as a side-by-side image or page beside the artifact.
+Making the comparison does not authorize publishing or sending it; follow the existing authorization for the artifact.
+Skip the comparison when no visible correction was made, and say so.
+
 ## Report
 
 Briefly state what was corrected, what was actually checked, and any unresolved issue or verification limit.
+Point to the before-and-after comparison when one was made.
 Link the updated artifact when applicable.
 If no correction was needed, say which relevant checks passed rather than inventing improvements.
 Keep optional redesign ideas separate from defects, and omit them when they do not help the user.

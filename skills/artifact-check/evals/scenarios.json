@@ -69,5 +69,17 @@
       "Reports the specific inspection blocker and any limited check actually performed.",
       "Does not claim visual verification or rewrite unseen content speculatively."
     ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "포스터 PDF 점검하고 고쳐줘. 뭘 바꿨는지 볼 수 있게 해줘.",
+    "files": [],
+    "expected_behavior": [
+      "Keeps a render or copy of the affected regions before the first visible correction.",
+      "After the recheck, produces a before-and-after comparison of each changed region at the same scale, with one line per change naming the defect and the correction.",
+      "Delivers the comparison as an openable file or page without publishing or sending it beyond the existing authorization; says when no visible correction was made."
+    ]
   }
 ]
