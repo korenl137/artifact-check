@@ -7,7 +7,7 @@ description: >-
   artifact refinement requests. Formats are open; code correctness review alone
   belongs to the existing code review workflow.
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # Artifact Check
@@ -60,7 +60,7 @@ Continue independent permitted corrections while a separate decision is pending.
 
 ## Compare before and after
 
-When a correction changed what the user sees, make a before-and-after comparison from the kept state and the rechecked output.
+When a correction changed what the user sees, make a before-and-after comparison from the kept state and the rechecked output if the user asks for it or the changes are too many to describe in the report; otherwise list each change in the report.
 Show each changed region before and after at the same scale and render settings, with one line per change naming the defect and the correction.
 Deliver it in a form the user can open, such as a side-by-side image or page beside the artifact.
 Making the comparison does not authorize publishing or sending it; follow the existing authorization for the artifact.
