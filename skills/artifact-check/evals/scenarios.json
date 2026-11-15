@@ -81,5 +81,17 @@
       "After the recheck, produces a before-and-after comparison of each changed region at the same scale, with one line per change naming the defect and the correction.",
       "Delivers the comparison as an openable file or page without publishing or sending it beyond the existing authorization; says when no visible correction was made."
     ]
+  },
+  {
+    "skills": [
+      "artifact-check"
+    ],
+    "query": "슬라이드 한 장 점검하고 오타만 고쳐줘.",
+    "files": [],
+    "expected_behavior": [
+      "Fixes the typos and rechecks the output.",
+      "Lists each change in the report instead of producing a separate before-and-after file, because the user did not ask for a comparison and the changes are few.",
+      "Does not publish or send anything beyond the existing authorization."
+    ]
   }
 ]
