@@ -13,7 +13,7 @@ Do not add format-specific engines, mandatory sibling skills, hooks or a shared 
 - Use the current agent by default and stop after relevant corrections and focused rechecks.
 - Keep code-only review, task closeout and guidance improvement with their existing workflows.
 
-Keep each skill self-contained and write its instructions in English, including concise Korean invocation examples.
+Keep each skill self-contained and write its instructions, including concise invocation examples in its frontmatter, in English.
 Update the version and affected scenario expectations before changing behavior; retain at least three realistic cases.
 Add scripts or references only when they remove concrete repeated work or improve reliability.
 
