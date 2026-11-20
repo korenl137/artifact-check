@@ -7,7 +7,7 @@ description: >-
   equivalent artifact refinement requests. Formats are open; code correctness review alone
   belongs to the existing code review workflow.
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Artifact Check
