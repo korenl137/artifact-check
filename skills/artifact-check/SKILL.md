@@ -3,11 +3,11 @@ name: artifact-check
 description: >-
   Checks and fixes a user-facing artifact against the original request and applicable
   instructions, then verifies the changes and reports the outcome. Use for
-  "결과물 점검해줘", "요청대로 만들어졌는지 확인하고 고쳐줘", or equivalent
-  artifact refinement requests. Formats are open; code correctness review alone
+  "check this deliverable", "verify it matches the request and fix it", or
+  equivalent artifact refinement requests. Formats are open; code correctness review alone
   belongs to the existing code review workflow.
 metadata:
-  version: "0.2.1"
+  version: "0.2.2"
 ---
 
 # Artifact Check
